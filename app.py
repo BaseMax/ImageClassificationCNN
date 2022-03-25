@@ -29,6 +29,26 @@ idx = random.randint(0, len(X_train))
 plt.imshow(X_train[idx, :])
 plt.show()
 
-model = Sequential(
+# model = Sequential([
+#     Conv2D(32, (3, 3), activation='relu', input_shape=(100, 100, 3)),
+#     MaxPooling2D(pool_size=(2, 2)),
+    
+#     Conv2D(64, (3, 3), activation='relu'),
+#     MaxPooling2D(pool_size=(2, 2)),
 
-)
+#     Flatten(),
+#     Dense(128, activation='relu'),
+#     Dense(1, activation='sigmoid')
+# ])
+model = Sequential()
+model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(100, 100, 3)))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+# model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(Conv2D(32, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Flatten())
+# model.add(Dense(128, activation='relu'))
+model.add(Dense(64, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
