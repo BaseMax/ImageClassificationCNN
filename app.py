@@ -5,9 +5,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
 
 labels = {
-    0: "DOG"
-    1: "CAT",
+    0: "DOG",
+    1: "CAT"
 }
+
 X_train = np.loadtxt('input.csv', delimiter = ",")
 Y_train = np.loadtxt('labels.csv', delimiter = ",")
 
@@ -73,9 +74,9 @@ for i in range(0, 5):
     plt.show()
 
     y_pred = model.predict(X_test[idx2, :].reshape(1, 100, 100, 3))
-    print(y_pred)
+    # print(y_pred)
     y_pred = y_pred > 0.5
-    print(y_pred)
+    # print(y_pred)
 
     if y_pred == False:
         pred = 'DOG'
@@ -83,5 +84,5 @@ for i in range(0, 5):
         pred = 'CAT'
 
     print("Our model predicts that the image is a " + pred)
-    print("The actual label is " + labels[Y_test[idx2]])
+    print("The actual label is " + labels[int(Y_test[idx2])])
     print("\n")
