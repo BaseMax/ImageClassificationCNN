@@ -27,3 +27,8 @@ print(X_train[1,:])
 
 idx = random.randint(0, len(X_train))
 plt.imshow(X_train[idx, :])
+plt.show()
+
+model = Sequential(
+
+)
