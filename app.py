@@ -60,3 +60,20 @@ model.compile(loss = 'binary_crossentryopy', optimizer = 'adam', metrics = ['acc
 model.fit(X_train, Y_train, epochs = 5, batch_size = 64)
 
 model.evaluate(X_test, Y_test)
+
+# Making predictions
+idx = random.randint(0, len(Y_test))
+plt.imshow(X_test[idx2, :])
+plt.show()
+
+y_pred = model.predict(X_test[idx2, :].reshape(1, 100, 100, 3))
+print(y_pred)
+y_pred = y_pred > 0.5
+print(y_pred)
+
+if y_pred == 0:
+    pred = 'dig'
+else
+    pred = 'cat'
+
+print("Our model predicts that the image is a " + pred)
