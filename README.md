@@ -6,11 +6,11 @@ Training model from dataset for detecting **cat** or **dog** from image. This mo
 
 | Image | Label | Predict |
 | --------------------- | ------------ | ------------ |
-| ![](demo/figure1.jpg) |  DOG | DOG |
-| ![](demo/figure2.jpg) | CAT | CAT |
-| ![](demo/figure3.jpg) | CAT | DOG | 
-| ![](demo/figure4.jpg) | CAT | CAT |
-| ![](demo/figure5.jpg) | DOG | DOG |
+| ![](demo/figure1.png) |  DOG | DOG |
+| ![](demo/figure2.png) | CAT | CAT |
+| ![](demo/figure3.png) | CAT | DOG | 
+| ![](demo/figure4.png) | CAT | CAT |
+| ![](demo/figure5.png) | DOG | DOG |
 
 ## Using
 
