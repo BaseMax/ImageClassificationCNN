@@ -52,3 +52,11 @@ model.add(Flatten())
 # model.add(Dense(128, activation='relu'))
 model.add(Dense(64, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
+
+# opt = keras.optimizers.SGD(learning_rate=0.001)
+model.compile(loss = 'binary_crossentryopy', optimizer = 'adam', metrics = ['accuracy'])
+
+# model.fit(X_train, Y_train, epochs = 10, batch_size = 32)
+model.fit(X_train, Y_train, epochs = 5, batch_size = 64)
+
+model.evaluate(X_test, Y_test)
