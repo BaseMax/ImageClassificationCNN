@@ -4,13 +4,11 @@ Training model from dataset for detecting **cat** or **dog** from image. This mo
 
 ### Demo CNN Model
 
-| Image | Label | Predict |
-| --------------------- | ------------ | ------------ |
-| ![](demo/figure1.png) |  DOG | DOG |
-| ![](demo/figure2.png) | CAT | CAT |
-| ![](demo/figure3.png) | CAT | DOG | 
-| ![](demo/figure4.png) | CAT | CAT |
-| ![](demo/figure5.png) | DOG | DOG |
+| Image1 | Label1 | Predict1 | Image2 | Label2 | Predict2 |
+| --------------------- | ------------ | ------------ | --------------------- | ------------ | ------------ |
+| ![](demo/figure1.png) |  DOG | DOG | ![](demo/figure2.png) | CAT | CAT |
+| ![](demo/figure3.png) | CAT | DOG | ![](demo/figure4.png) | CAT | CAT |
+| ![](demo/figure5.png) | DOG | DOG | | | |
 
 ## Using
 
