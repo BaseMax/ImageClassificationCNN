@@ -2,19 +2,7 @@
 
 Train a model from a dataset for predicting **cat** and **dog** from image.
 
-### Demo CNN Model
-
-| Image1 | Label1 | Predict1 | Image2 | Label2 | Predict2 |
-| --------------------- | ------------ | ------------ | --------------------- | ------------ | ------------ |
-| ![](demo/figure1.png) |  DOG | DOG | ![](demo/figure2.png) | CAT | CAT |
-| ![](demo/figure3.png) | CAT | DOG | ![](demo/figure4.png) | CAT | CAT |
-| ![](demo/figure5.png) | DOG | DOG | | | |
-
-## Using
-
-```
-$ python app.py
-```
+![Image Classification CNN cat and dog](demo.jpg)
 
 #### Training
 
@@ -31,6 +19,20 @@ Epoch 5/5
 32/32 [==============================] - 7s 229ms/step - loss: 0.4456 - accuracy: 0.7940
 13/13 [==============================] - 0s 26ms/step - loss: 0.6087 - accuracy: 0.6925
 ```
+
+## Using
+
+```
+$ python app.py
+```
+
+### Demo CNN Model
+
+| Image1 | Label1 | Predict1 | Image2 | Label2 | Predict2 |
+| --------------------- | ------------ | ------------ | --------------------- | ------------ | ------------ |
+| ![](demo/figure1.png) |  DOG | DOG | ![](demo/figure2.png) | CAT | CAT |
+| ![](demo/figure3.png) | CAT | DOG | ![](demo/figure4.png) | CAT | CAT |
+| ![](demo/figure5.png) | DOG | DOG | | | |
 
 ## Sources
 
