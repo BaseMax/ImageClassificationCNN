@@ -1,6 +1,6 @@
 # Image Classification CNN
 
-Training model from dataset for detecting **cat** or **dog** from image. This model can **predict** image.
+Train a model from a dataset for predicting **cat** and **dog** from image.
 
 ### Demo CNN Model
 
